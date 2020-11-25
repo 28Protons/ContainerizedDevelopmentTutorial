@@ -9,8 +9,15 @@ Because this session is meant to given in a short time period. Doing the prep he
 ### Download this repository
 Download or check out this Git repository. The tutorial should be run from the root of this repository and all commands will assume they are being run in or relative to this base folder.
 
-## IDE and Editor requirements.
-You can use any editor for this tutorial but we'll also be showing some tips and tricks for using Visual Studio Code, you may want to install that and use it for the session. But there will be plenty to do in your editor of choice.
+You may need to install Git for Windows first.  It can be found here.  https://git-scm.com/download/win
+
+If you are on a Mac, you can install it by running this command to install the Homebrew package manager if you don't already have it. https://brew.sh/
+Once installed, you can run this command to install git: `brew install git` 
+
+Once Git is installed run the following command in folder of your liking.  `git clone https://github.com/byllc/ContainerizedWorkflowsTest.git`
+
+# IDE and Editor requirements.
+You can use any editor for this tutorial but we'll also be showing some tips and tricks for using Visual Studio Code, you may want to install that and use it for the session. But there will be plenty to do in your editor of choice. VSCode can be found here: https://code.visualstudio.com/
 
 ### Install Docker
 First ensure you've installed the appropriate Docker implementation for your platform. The docker for desktop installation can be found [here](https://docs.docker.com/desktop/)
@@ -37,17 +44,22 @@ If you've installed a recent version of Docker Desktop this step should not be n
 Install Docker compose
 https://docs.docker.com/compose/install/
 
+If of Mac, and you have installed Homebrew, Docker Compose should already be installed once Docker Desktop is installed.  As a santiy check, run the following commmand to ensure Docker Compose is on your machine `docker-compose -v`.
+
 
 ## Once Docker Desktop is installed
 
 We can now kick the tires on the installation to ensure you can follow along during
 the live session. Open up a terminal session that has access to the Docker CLI and navigate to the folder that contains this repository.
-* Pull the base image we'll be using for the tutorial from Dockerhub
+* Pull the base image we'll be using for the tutorial from Dockerhub.  You will need a docker acccount to pull from their registry.  Create an account here and not the username and password created.  Run the following command to login if you have never done so: `docker login`.  You shall be prompted for credentials.
+
+After you are logged in, run the following command to pull the `python` image:
 `docker pull python`
+
 * From the directory that contains this README run the following command to build a docker cointainer image from the Dockerfile
-`docker build --tag python-test-app .``
+`docker build --tag python-test-app .`
 * Run a docker container from the image we built in the previous step. Docker will try to publish port  4000 on the container to your local port 4000 making the test app available at http://localhost:4000
-`docker run --detach --publish 4000:4000 --name python-test-app python-test-image`
+`docker run --detach --publish 4000:4000 --name python-test-app python-test-app`
 
 * read further about docker run if you run in to issues:
 [Docker run reference](https://docs.docker.com/engine/reference/commandline/run/)
@@ -86,7 +98,7 @@ Once you have ensured your system is setup for the session you can clean up the 
 `docker-compose rm`
 
 * Remove the container
-`docker stop pthon-test-app`
+`docker stop python-test-app`
 
 * Remove the image
-`docker image rm python-test-image`
+`docker image rm -f python-test-app`
