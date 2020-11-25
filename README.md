@@ -19,7 +19,7 @@ First ensure you've installed the appropriate Docker implementation for your pla
 
 If you are on windows you'll need to be on  Windows 10, version 2004 or higher (Build 19041 or higher).
 
-##Ensure that you can run linux containers on Windows
+#### Ensure that you can run linux containers on Windows
 If you are on Mac OS or Linux and have Docker installed you can skip this step.
 There are several ways to run linux containers on Windows 10.
 
