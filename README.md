@@ -9,7 +9,7 @@ Because this session is meant to given in a short time period. Doing the prep he
 ### Download this repository
 Download or check out this Git repository. The tutorial should be run from the root of this repository and all commands will assume they are being run in or relative to this base folder.
 
-# IDE and Editor requirements.
+## IDE and Editor requirements.
 You can use any editor for this tutorial but we'll also be showing some tips and tricks for using Visual Studio Code, you may want to install that and use it for the session. But there will be plenty to do in your editor of choice.
 
 ### Install Docker
