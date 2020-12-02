@@ -1,8 +1,8 @@
 version: '3'
 
 services:
-  python-test-app:
-    image: python-test-image
+  pyton-test-app:
+    image: python-test-app
     volumes:
       - .:/app
     ports:
