@@ -1,0 +1,3 @@
+FROM  my-app-dev:0.2
+
+  RUN python -m pip install pandas
