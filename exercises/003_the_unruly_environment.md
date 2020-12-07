@@ -13,6 +13,8 @@ Let's spin up the docker-compose environment.
 
 Now we can list the running containers and you'll see that we now have the app and a redis instance running. It's that easy to add containerized services to your environment. There are images for just about anything want to run cobol on a container? If you don't have a particular image in your local repository docker will go looking for it for you.
 
+Docker Compose automatically adds services to the default network and you can communicate between containers in the same network. 
+
 when we are done we can spin everything in this environment down again
 
 `docker-compose stop`
