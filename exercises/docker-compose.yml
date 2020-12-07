@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  app:
+    image: my-app:0.1
+    environment:
+      - ENVIRONMENT=development
+      - PORT=6000
+    ports:
+      - '7000:6000'
+    volumes:
+      - "./app:/app"
+  db:
+    image: redis
+    environment:
+      - ENVIRONMENT=development

@@ -1,0 +1,13 @@
+FROM  python
+
+  #create a working directory, other paths mapped to the container will be relative to This
+  #to maintain base container indepdendence you should not use the root of the container
+  #as your working directory
+  WORKDIR /app
+
+  # Expose port 6000 to the Docker host, so we can access it
+  # from the outside.
+  EXPOSE 6000
+
+  # The main command to run when the container starts, by default this runs in WORKDIR
+  CMD python /app/webserver.py
