@@ -19,7 +19,7 @@ Now refresh your browser, you've made your first change to the project. Great, y
 
 Have a look at Dockerfile.001 and notice the updated Docker command. Lets build a new version of our development image, and tag it 0.2.
 
-`docker build --tag my-app-dev:0.2 --file Dockerfile.002 .`
+`docker build --tag my-app-dev:0.2 --file examples/Dockerfile.002 .`
 
 And run the new image
 

@@ -5,9 +5,9 @@ FROM  python
   #as your working directory
   WORKDIR /app
 
-  # Expose port 6000 to the Docker host, so we can access it
+  # Expose port 8000 to the Docker host, so we can access it
   # from the outside.
   EXPOSE 8080
 
   # The main command to run when the container starts, by default this runs in WORKDIR
-  CMD python -m http.server  6000
+  CMD python /app/webserver.py

@@ -14,10 +14,20 @@ mysql:
     MYSQL_ROOT_PASSWORD: soopersekret
 ``
 
-Notice we are passing in an environment variable, and a restart flag. The restart option is here for discussion, normally you would use it in  a production environment. Let's change that to  "no"
+Notice we are passing in an environment variable, and a restart flag. The restart option is here for discussion, normally you would use it in  a production environment. Let's change that to  "no" and lets start the
 
-`docker-compose restart`
+`docker-compose up db2`
 
-if the environment is not already running you can just start normally
+or if the environment is not already running you can just start normally
 
 `docker-compose up`
+
+And let's ensure the mysql host is available via service name. Notice we're also now using the docker-compose version of exec and running  the ping command directly
+
+`docker-compose exec app ping mysql`
+
+We have a new database in the environment in minutes. Let's have a look at the full environment.
+
+`docker stats`
+
+Docker stats gives us a view of the resource utilization of our container environment.

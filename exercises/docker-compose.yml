@@ -10,7 +10,7 @@ services:
       - '7000:6000'
     volumes:
       - "./app:/app"
-  db:
+  redis:
     image: redis
     environment:
       - ENVIRONMENT=development

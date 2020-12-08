@@ -7,10 +7,16 @@ services:
       - ENVIRONMENT=development
       - PORT=6000
     ports:
-      - '7000:6000'
+      - '8084:8080'
     volumes:
       - "./app:/app"
   redis:
     image: redis
     environment:
       - ENVIRONMENT=development
+  mysql:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: soopersekret
