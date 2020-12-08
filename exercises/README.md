@@ -10,7 +10,7 @@ These exercises assume you have already ensured your system is up and running wi
 In this example we are going to do a quick overview of the environment we set up in this tutorial. We'll walk through the basic container paradigms and briefly touch on how to and why you would want to manage a local containerized development environment.
 
 ### 002
-[Your First Day On the Job](002_your_first_day_on_the_job)
+[Your First Day On the Job](002_your_first_day_on_the_job.md)
 
 It's your first day on the job, you are a new developer on an existing software product. We're going to get you set up to write some code and make commits on your first day.
 
