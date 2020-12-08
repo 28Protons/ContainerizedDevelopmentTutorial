@@ -5,7 +5,7 @@ FROM  python
   #as your working directory
   WORKDIR /app
 
-  # Expose port 8000 to the Docker host, so we can access it
+  # Expose port 8080 to the Docker host, so we can access it
   # from the outside.
   EXPOSE 8080
 

@@ -12,11 +12,11 @@ Since an image is the basic unit of utility in a containerized software process,
 
 Let's build this image.
 
-`docker build --tag my-app-dev:0.1 .`
+`docker build --tag my-app-base:0.1 .`
 
 And launch container using this image
 
-`docker run --detach --publish 6000:6000 --name my-app-dev my-app-dev:0.1`
+`docker run --detach --publish 5001:8080 --name my-app-001 my-app-base:0.1`
 
 Now let's see if its running
 
@@ -30,7 +30,7 @@ Note the container id and let's have a look at the containers environment config
 
 Maybe you aren't convinced anything useful happened. Let's have a look at the container itself.
 
-`docker exec -it my-app-dev /bin/bash`
+`docker exec -it my-app-001 /bin/bash`
 
 We're now running an interactive shell on the container itself.
 You should now be in a bash shell on the running container.
