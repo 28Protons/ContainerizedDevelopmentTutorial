@@ -37,3 +37,6 @@ That may take a couple of minutes. But as pandas is installing you realize somet
 Have a look at Dockerfile.003 and notice there isn't much there. That is because we are now using cascading images to decrease the amount of time it takes to build an individual image. It also means that you can provide minimal base images across an organization for consistency, but individual development teams can still extend those images for their needs trivially.
 
 `docker build --tag my-app-dev:0.3 --file examples/Dockerfile.003 .`
+
+
+[Next: The Data Dilemma](004_the_data_dilemma.md)

@@ -21,3 +21,5 @@ Now we need to apply our cascading Dockerfile to the Mix. Notice the only thing 
 `docker build --tag my-app-dev:0.5-alpine --file examples/Dockerfile.005a .`
 
 And we've swapped the entire linux distribution out from under our application.
+
+[Next: The Big Red Button](006_the_big_red_button.md)

@@ -24,3 +24,5 @@ Have a look at Dockerfile.001 and notice the updated Docker command. Lets build 
 And run the new image
 
 `docker run  --detach --publish 7000:6000 --name my-app-python-dev --volume $(pwd)/app:/app  my-app-dev:0.2`
+
+[Next: The Unruly Environment](003_the_unruly_environment.md)

@@ -53,3 +53,5 @@ Or we can just play around with python.
 `python`
 
 But do we do now?  This is a development environment and we probably want to be able to make changes to the software we are developing. Let's go on to the next example.
+
+[Next: Your First Day On the Job](002_your_first_day_on_the_job.md)
